@@ -1,0 +1,11 @@
+QA E2E auto install (Windows, continuation via approved upgrade)
+source_sha: 2343df83a3a26ae83bc66d4009dd67a913eeea4e
+mode: auto
+beads: true
+branch: qa/install-e2e-auto
+project verify: bash .agents/project/verify.sh -> exit 0
+bd --sandbox ready --json -> [] exit 0
+origin/beads-backup: 4df707803cf9621d5244b646ed2591eb2b4ae504
+protection main: enforce_admins=true pr_required=true force=false delete=false
+memory-bank files: 6
+agent: Claude Code 2.1.317 (claude-fable-5-1), bd 1.2.2, Git Bash
