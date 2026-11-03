@@ -1,0 +1,1 @@
+Windows E2E literal fresh auto install (e2e-complex-auto), planning marker
